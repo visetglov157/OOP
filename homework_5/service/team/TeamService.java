@@ -1,4 +1,4 @@
-package homework_5.controller;
+package homework_5.service.team;
 
 import homework_5.model.student;
 import homework_5.model.teacher;
@@ -6,12 +6,10 @@ import homework_5.model.team;
 
 import java.util.List;
 
-public interface TeamController<T extends team> {
+public interface TeamService<T extends team> {
 
     void create(String teamName);
-
     void createAndPopulate(String teamName);
-
     void populateStudentClassById(Long id);
 
     void load();
@@ -25,6 +23,8 @@ public interface TeamController<T extends team> {
     List<T> getAll();
 
     T getStudentClassById(Long id);
+
+    T getStudentClassByName(String teamName);
 
     void addTeacher(Long teacherId, Long studentClassId);
 

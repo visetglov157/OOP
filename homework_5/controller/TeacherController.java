@@ -24,22 +24,22 @@ public class TeacherController implements UserController<teacher> {
     }
 
     @Override
-    public List<Teacher> getAllUsersSortedByFirstName() {
+    public List<teacher> getAllUsersSortedByFirstName() {
         return teacherService.getAllUsersSortedByFirstName();
     }
 
     @Override
-    public List<Teacher> getAllUsersSortedByLastName() {
+    public List<teacher> getAllUsersSortedByLastName() {
         return teacherService.getAllUsersSortedByLastName();
     }
 
     @Override
-    public List<Teacher> getAllUsersSortedByAge() {
+    public List<teacher> getAllUsersSortedByAge() {
         return teacherService.getAllUsersSortedByAge();
     }
 
     @Override
-    public List<Teacher> getAllUsersSortedById() {
+    public List<teacher> getAllUsersSortedById() {
         return teacherService.getAllUsersSortedById();
     }
 
@@ -50,7 +50,7 @@ public class TeacherController implements UserController<teacher> {
     }
 
     @Override
-    public List<Teacher> getAll() {
+    public List<teacher> getAll() {
         return teacherService.getAll();
     }
 

@@ -1,19 +1,29 @@
-package homework_5.controller;
+package homework_5.service.user;
 
+import homework_5.model.student;
 import homework_5.model.user;
 
 import java.util.List;
 
-public interface UserController<T extends user>  {
+public interface UserService<T extends user> {
 
     void create(String fullName, Integer age, String phoneNumber);
+
     void createRandom(Integer quantity);
-    List<T> getAllUsersSortedByFirstName();
-    List<T> getAllUsersSortedByLastName();
-    List<T> getAllUsersSortedByAge();
-    List<T> getAllUsersSortedById();
-    boolean remove(String fullName);
+
     List<T> getAll();
+
+    List<T> getAllUsersSortedByFirstName();
+
+    List<T> getAllUsersSortedByLastName();
+
+    List<T> getAllUsersSortedByAge();
+
+    List<T> getAllUsersSortedById();
+
+    void remove(String fullName);
+
     void edit(String fullName, Integer age, String phoneNumber);
 
+    List<T> getAvailableUsers();
 }

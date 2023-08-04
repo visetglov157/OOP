@@ -1,15 +1,15 @@
 package homework_5.controller;
 
-import homework_5.model.Student;
+import homework_5.model.student;
 import homework_5.service.user.UserService;
 
 import java.util.List;
 
-public class StudentController implements UserController<Student> {
+public class StudentController implements UserController<student> {
 
-    public UserService<Student> studentService;
+    public UserService<student> studentService;
 
-    public StudentController(UserService<Student> studentService) {
+    public StudentController(UserService<student> studentService) {
         this.studentService = studentService;
     }
 
@@ -24,22 +24,22 @@ public class StudentController implements UserController<Student> {
     }
 
     @Override
-    public List<Student> getAllUsersSortedByFirstName() {
+    public List<student> getAllUsersSortedByFirstName() {
         return studentService.getAllUsersSortedByFirstName();
     }
 
     @Override
-    public List<Student> getAllUsersSortedByLastName() {
+    public List<student> getAllUsersSortedByLastName() {
         return studentService.getAllUsersSortedByLastName();
     }
 
     @Override
-    public List<Student> getAllUsersSortedByAge() {
+    public List<student> getAllUsersSortedByAge() {
         return studentService.getAllUsersSortedByAge();
     }
 
     @Override
-    public List<Student> getAllUsersSortedById() {
+    public List<student> getAllUsersSortedById() {
         return studentService.getAllUsersSortedById();
     }
 
@@ -50,7 +50,7 @@ public class StudentController implements UserController<Student> {
     }
 
     @Override
-    public List<Student> getAll() {
+    public List<student> getAll() {
         return studentService.getAll();
     }
 

@@ -16,7 +16,7 @@ public class student extends user implements Comparable<student> {
     }
 
     @Override
-    public int compareTo(Student o) {
+    public int compareTo(student o) {
         return getFullName().compareTo(o.getFullName());
     }
 
