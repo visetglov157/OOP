@@ -1,4 +1,4 @@
-package homework_7;
+package patterns.adapter;
 
 public class adapter {
 
